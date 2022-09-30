@@ -1,0 +1,54 @@
+@import "../../../assests/styles/variables.scss";
+
+.heading {
+  font-family: $font-primary-bold;
+  color: $cf-black;
+  padding-bottom: $padding-24;
+}
+
+.heading-white {
+  color: $cf-white;
+}
+
+.size-64 {
+  font-size: $font-size-64;
+  line-height: 115.5%;
+}
+
+.size-58 {
+  font-size: $font-size-58;
+  line-height: 136.5%;
+}
+
+.size-52 {
+  font-size: $font-size-52;
+}
+
+.size-48 {
+  font-size: $font-size-48;
+  line-height: 115.5%;
+}
+
+.size-42 {
+  font-size: $font-size-42;
+}
+
+.size-37 {
+  font-size: $font-size-37;
+}
+
+.size-32 {
+  font-size: $font-size-32;
+}
+
+.size-28 {
+  font-size: $font-size-28;
+}
+
+.size-26 {
+  font-size: $font-size-26;
+}
+
+.size-24 {
+  font-size: $font-size-24;
+}

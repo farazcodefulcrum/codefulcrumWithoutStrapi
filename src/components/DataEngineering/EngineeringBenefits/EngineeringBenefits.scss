@@ -1,0 +1,26 @@
+.engineering-benefits {
+  background: url("/servicesPage/bg-illustration.png"), #ffffff;
+  background-position: center;
+  background-size: cover;
+
+  height: 800px;
+  background-size: 72rem;
+  background-repeat: no-repeat;
+  margin-top: 1rem;
+  @media only screen and (max-width: 700px) {
+    margin-top: -8rem;
+    height: 700px;
+    background-size: 68rem;
+  }
+}
+
+.benefits-wrapper {
+  .text {
+    font-family: "Poppins";
+    text-align: justify;
+    color: #2f2f2f;
+    @media only screen and (max-width: 500px) {
+      font-size: 13px;
+    }
+  }
+}

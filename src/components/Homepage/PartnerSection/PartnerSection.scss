@@ -1,0 +1,29 @@
+@import "../../../assests/styles/variables.scss";
+
+.partner-section {
+  background: url("/partner-us-bg.png"), $cf-white;
+  padding: 8rem 0;
+  background-position: right 0px top -352px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 8rem 0;
+
+  @media only screen and (max-width: 600px) {
+    padding: 5rem 0;
+    background-blend-mode: hard-light;
+    padding-bottom: 3rem;
+  }
+  .partner-box {
+    .border {
+      height: 4px;
+      width: 50%;
+      background: linear-gradient(89.65deg, #142f64 -1.86%, #fabb5a 193.38%);
+    }
+    .text {
+      color: $cf-black;
+      font-size: $font-size-16;
+      font-family: $font-primary;
+      line-height: 128.5%;
+    }
+  }
+}

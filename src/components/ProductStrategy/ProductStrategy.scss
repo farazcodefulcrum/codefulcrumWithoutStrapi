@@ -1,0 +1,57 @@
+@import "../../assests/styles/variables.scss";
+.consultation-bg {
+  background: url("/productStrategy/test.svg"), #183266;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 74rem;
+  padding: 7rem 0;
+  .content {
+    margin: 6rem 0;
+  }
+  .header {
+    margin: auto;
+    text-align: center;
+    color: #f3f3f3;
+  }
+  .text {
+    font-size: 1.5rem;
+    color: #f3f3f3;
+    font-family: $font-primary;
+  }
+}
+
+.estimate-wrapper-ps {
+  background: url(/productStrategy/estimate-bg.svg), #ff5b53;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 35rem;
+  color: white;
+  padding-top: 5rem !important;
+  padding-bottom: 4rem !important;
+  @media only screen and (max-width: 600px) {
+    background-blend-mode: color-burn;
+  }
+  @media only screen and (max-width: 400px) {
+    background-size: 40rem;
+  }
+
+  .text {
+    width: 50%;
+    @media only screen and (max-width: 800px) {
+      width: 80%;
+    }
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+  .header {
+    color: white;
+    width: 70%;
+    @media only screen and (max-width: 800px) {
+      width: 80%;
+    }
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+}

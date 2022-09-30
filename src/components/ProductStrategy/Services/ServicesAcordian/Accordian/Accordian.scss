@@ -1,0 +1,40 @@
+@import "../../../../../assests/styles/variables.scss";
+.accordian-wrapper-ps {
+  margin: 1px 0 !important;
+  border-radius: 4px !important;
+  border-bottom: 2px solid rgba(185, 132, 51, 0.46);
+  padding-bottom: 1rem;
+  padding: 2rem 0;
+
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+
+  //background: transparent !important;
+  @media only screen and (max-width: 600px) {
+    padding: 0rem 0 !important;
+  }
+  padding-top: 1rem;
+
+  .header {
+    font-size: 2.35rem;
+    font-family: "Poppins";
+    font-weight: 600;
+  }
+  .sub-text {
+    font-size: 1rem;
+    color: #2f2f2f;
+    font-family: $font-primary;
+    @media only screen and (max-width: 600px) {
+      font-size: 13px;
+    }
+  }
+  .text {
+    font-size: 1rem;
+    color: #2f2f2f;
+
+    font-family: $font-primary;
+    @media only screen and (max-width: 600px) {
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.users-worldwide {
+  background: url("/aboutUs/users-worldwide.png"), #fabb5a;
+  background-position: bottom;
+  height: 760px;
+  background-size: 66rem;
+  background-repeat: no-repeat;
+  padding: 4.5rem 0;
+  @media only screen and (max-width: 767px) {
+    height: 545px !important;
+    background-size: 40rem;
+  }
+  @media only screen and (max-width: 500px) {
+    height: 540px !important;
+    background-size: 40rem;
+  }
+  @media only screen and (max-width: 426px) {
+    height: 420px !important;
+    background-size: 30rem;
+  }
+
+  .header {
+    text-align: center;
+  }
+}
+
+.bottom-box {
+  width: 100%;
+  background: #fabb5a;
+  height: 4rem;
+}

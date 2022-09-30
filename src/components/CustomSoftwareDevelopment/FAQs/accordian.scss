@@ -1,0 +1,28 @@
+@import "../../../assests//styles/variables.scss";
+.paragraph-wrapper {
+  p {
+    font-size: 1rem;
+    font-family: $font-primary;
+    @media only screen and (max-width: 600px) {
+      font-size: 13px;
+    }
+  }
+  header {
+    font-family: "PoppinSemi";
+    font-size: 1.5rem;
+  }
+  ul {
+    span {
+      font-size: 1.2rem;
+      font-family: "PoppinSemi";
+    }
+    li {
+      padding-top: 8px;
+      font-size: 1rem;
+      font-family: $font-primary !important;
+      @media only screen and (max-width: 600px) {
+        font-size: 13px;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../../assests/styles/variables.scss";
+
+.custom-software-header-ps {
+  background: transparent;
+  .desc {
+    font-family: $font-primary;
+  }
+  .text {
+    font-size: 1.75rem;
+    line-height: 42px;
+    color: #2f2f2f;
+    font-family: $font-primary;
+    text-align: center;
+  }
+}
+
+.data-col-custom-software-ps {
+  .divider {
+    background: linear-gradient(89.65deg, #355070 -1.86%, #869d7a 193.38%);
+    height: 4px;
+  }
+  .header {
+    color: #2f2f2f;
+    font-family: $font-primary;
+    font-size: 1.375rem;
+    padding-top: 2rem;
+  }
+  .text {
+    font-family: $font-primary;
+    color: #2f2f2f;
+    padding-top: 2rem;
+  }
+}

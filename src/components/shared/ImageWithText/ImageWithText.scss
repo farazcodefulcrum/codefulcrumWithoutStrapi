@@ -1,0 +1,29 @@
+@import "../../../assests/styles/variables.scss";
+
+.image-with-text-box {
+  border: 1px solid #5c6375;
+  border-radius: $border-radius-16;
+  padding: $padding-16;
+  display: flex;
+  height: 100%;
+  .img {
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-right: $margin-24;
+    flex-shrink: 0;
+  }
+  .heading {
+    color: $cf-white;
+    font-family: $font-primary;
+    font-size: $font-size-18;
+    margin-bottom: $margin-12;
+    font-weight: $font-weight-6;
+    padding-bottom: 0px;
+  }
+  .text {
+    color: $cf-white;
+    font-family: $font-secondary;
+    font-size: $font-size-18;
+    padding-bottom: 0px;
+  }
+}

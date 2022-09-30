@@ -1,0 +1,113 @@
+@import "../../../assests/styles/variables.scss";
+
+.services-section-hook {
+  background: url("/contact-bg.png"), $cf-white;
+  padding: 13rem 0 5rem;
+  background-repeat: no-repeat;
+  background-size: 24rem;
+  background-position: left 0px top 0;
+  @media only screen and (max-width: 600px) {
+    background-blend-mode: hard-light;
+  }
+  @media only screen and (max-width: 400px) {
+    padding: 8rem 0 5rem;
+  }
+  .text {
+    font-size: $font-size-16;
+    color: $cf-black;
+    font-family: $font-primary;
+    font-weight: $font-weight-5;
+    padding-left: 4rem;
+  }
+  .service-section-cards {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    min-height: 500px;
+    .service-section-card {
+      position: relative;
+      max-width: 373px;
+      background-color: $cf-white;
+      border: 1px solid #cccccc;
+      padding: 4.5rem 2rem 3rem;
+      position: relative;
+      border-radius: $border-radius-8;
+      transition: 200ms;
+      width: 100%;
+      height: 460px;
+      transition: 0.5s ease-in-out;
+
+      @media only screen and (max-width: 1000px) {
+        height: 440px;
+        top: 0px;
+      }
+      @media only screen and (max-width: 778px) {
+        height: 380px;
+        top: 0px;
+      }
+      .link-icon {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.75rem;
+        height: 1.25rem;
+        width: 1.25rem;
+        svg {
+          fill: $cf-black;
+        }
+      }
+      .icon {
+        img {
+          margin-left: -2rem;
+        }
+      }
+      .heading {
+        margin-top: -2.5rem;
+        font-size: 2.3rem;
+        color: $cf-black;
+        font-family: $font-primary;
+        font-weight: $font-weight-9;
+        padding-bottom: 0.5rem;
+        line-height: 3rem;
+        transition: 200ms;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 1.5rem;
+      }
+      .text {
+        margin-top: 0.5rem;
+        font-size: $font-size-16;
+        color: $cf-black;
+        font-family: $font-primary;
+        font-weight: $font-weight-4;
+        padding: 0;
+        transition: 200ms;
+      }
+
+      &:hover {
+        background-color: #183266;
+        transition: 0.5s ease-in-out;
+
+        @media only screen and (max-width: 500px) {
+          margin: 1rem 0;
+        }
+
+        transform: scale(1.033);
+
+        transition: height 1s width 1s;
+        .icon {
+          transition: 200ms;
+          filter: drop-shadow(0px 15px 30px rgba(250, 187, 90, 0.26));
+        }
+        .link-icon {
+          svg {
+            fill: $cf-white;
+          }
+        }
+        .heading,
+        .text {
+          color: $cf-white;
+        }
+      }
+    }
+  }
+}

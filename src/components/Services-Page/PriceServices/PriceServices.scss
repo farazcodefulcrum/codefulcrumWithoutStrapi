@@ -1,0 +1,66 @@
+@import "../../../assests/styles/variables.scss";
+.price-services {
+  .side-img {
+    display: flex;
+    justify-content: end;
+    @media only screen and (max-width: 426px) {
+      justify-content: start;
+    }
+  }
+  .text {
+    font-size: 1rem;
+    font-family: $font-primary;
+    color: #2f2f2f;
+    @media only screen and (max-width: 600px) {
+      font-size: 13px;
+    }
+  }
+  background-color: #fabb5a;
+  .background-img {
+    background: url("/servicesPage/bg-illustration.png"), #fabb5a;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 6rem;
+    width: 94%;
+  }
+  .header-1 {
+    font-family: "PoppinSemi";
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+}
+.estimate-wrapper {
+  background: url(/servicesPage/cost-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 20rem;
+  @media only screen and (max-width: 600px) {
+    background-blend-mode: hard-light;
+  }
+
+  padding-bottom: 4rem;
+  color: white;
+  background-color: #183266;
+  .box-wrapper {
+    padding-top: 5rem !important;
+    padding-bottom: 4rem !important;
+  }
+  .header {
+    color: white;
+    padding-top: 4rem;
+    @media only screen and (max-width: 600px) {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  }
+  .text {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    @media only screen and (max-width: 900px) {
+      width: 70%;
+    }
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+}

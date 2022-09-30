@@ -1,0 +1,163 @@
+@import "../../../assests/styles/variables.scss";
+
+.work-swiper-data-eng {
+  background-color: transparent;
+  overflow: hidden;
+
+  padding-top: 13rem;
+
+  .inner-div {
+    padding: 0 4rem;
+    @media only screen and (max-width: 700px) {
+      padding: 0 0rem;
+    }
+    .header {
+      line-height: 36px;
+      font-family: "PoppinSemi";
+    }
+  }
+  .our-work-stroke {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+  }
+  .all-projects {
+    color: $cf-red;
+    font-size: 1.125rem;
+    font-family: $font-primary;
+    font-weight: $font-weight-6;
+    margin-top: $margin-8;
+    margin-right: 3rem;
+    text-decoration: none;
+  }
+  .swiper {
+    overflow: visible;
+    margin: 2rem 0 6rem;
+    padding: 0 $padding-24;
+  }
+  .work-sec-heading-w {
+    width: 50%;
+  }
+  .swiper-slide {
+    max-width: 573px;
+    overflow: hidden;
+  }
+
+  .swiper-button-prev {
+    background: url("/swipper-left-arrow.svg"), $cf-white;
+    background-position: center;
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    padding: $padding-8;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: block;
+    position: absolute !important;
+    border: 1px solid black;
+
+    @media only screen and (max-width: 500px) {
+      top: 300px;
+    }
+    @media only screen and (max-width: 426px) {
+      top: 320px;
+    }
+    @media only screen and (max-width: 375px) {
+      top: 360px;
+    }
+    @media only screen and (max-width: 350px) {
+      top: 380px;
+    }
+    @media only screen and (max-width: 330px) {
+      top: 395px;
+    }
+    @media only screen and (max-width: 304px) {
+      top: 415px;
+    }
+    &::after {
+      display: none;
+    }
+  }
+
+  .swiper-button-next {
+    background: url("/swipper-right-arrow.svg"), $cf-white;
+    background-position: center;
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    padding: $padding-8;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid black;
+
+    display: block;
+    @media only screen and (max-width: 500px) {
+      top: 300px;
+    }
+    @media only screen and (max-width: 426px) {
+      top: 320px;
+    }
+    @media only screen and (max-width: 375px) {
+      top: 360px;
+    }
+    @media only screen and (max-width: 350px) {
+      top: 380px;
+    }
+    @media only screen and (max-width: 330px) {
+      top: 395px;
+    }
+    @media only screen and (max-width: 304px) {
+      top: 415px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .swiper-button-next.swiper-button-disabled,
+  .swiper-button-prev.swiper-button-disabled {
+    display: none;
+  }
+
+  .swiper-pagination {
+    bottom: -48px;
+    left: 0;
+    .swiper-pagination-bullet {
+      margin: 0;
+      background-color: #000000;
+      height: 4px;
+      width: 4rem;
+      border-radius: 0;
+      opacity: 1;
+      &:first-child {
+        border-radius: 4px 0 0 4px;
+      }
+      &:last-child {
+        border-radius: 0 4px 4px 0;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #fabb5a;
+    }
+  }
+  .client-work-slide {
+    .text {
+      font-size: 0.9rem;
+      font-family: $font-primary;
+      color: $cf-black;
+      margin-top: 0.4rem;
+      line-height: 22.5px;
+      text-align: justify;
+      @media only screen and (max-width: 600px) {
+        font-size: 13px;
+      }
+    }
+    .link {
+      font-size: $font-size-18;
+      font-family: $font-primary;
+      color: $cf-black;
+      padding-right: $padding-8;
+    }
+  }
+}

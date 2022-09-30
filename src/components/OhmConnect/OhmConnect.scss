@@ -1,0 +1,384 @@
+@import "../../assests/styles/variables.scss";
+
+.team-ohm {
+  background: url("/ohmConnect/bg-2.svg"), $cf-white;
+  background-repeat: no-repeat;
+  background-position: right bottom -800px;
+  background-size: 44rem;
+  @media only screen and (max-width: 600px) {
+    background-blend-mode: hard-light;
+    background-position: right bottom;
+  }
+  //background-size: 22rem;
+
+  .header {
+    font-size: 2.3rem;
+    font-family: "PoppinSemi";
+  }
+  .text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #2f2f2f;
+    padding: 0;
+    margin: 0;
+  }
+  .sub-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1332rem;
+    line-height: 24px;
+    color: #2f2f2f;
+    padding-top: 1.5rem;
+  }
+
+  .sub-header {
+    font-family: "PoppinSemi";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-top: 2.7rem;
+  }
+  .content-col {
+    background-color: #f6f6f6;
+    padding: 1.6rem 1.6rem 1.3rem;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    .circle {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #183266;
+
+      @media only screen and (max-width: 600px) {
+        margin: auto;
+      }
+    }
+    .name {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 30px;
+      color: #000000;
+      padding-top: 1rem;
+    }
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+    }
+  }
+}
+
+.features-ohm {
+  background: url("/ohmConnect/bg-1.svg"), $cf-white;
+  background-repeat: no-repeat;
+  background-position: left bottom -289px;
+  background-size: 39rem;
+  padding-bottom: 7rem;
+  @media only screen and (max-width: 600px) {
+    background-blend-mode: hard-light;
+    background-position: left bottom;
+  }
+  .header {
+    font-family: "PoppinSemi";
+    font-style: normal;
+    font-size: 2.375rem;
+    padding: 0;
+    padding-top: 1rem;
+    color: #2f2f2f;
+  }
+  .text {
+    font-family: $font-primary;
+    font-style: normal;
+    font-size: 1.16rem;
+    color: #2f2f2f;
+    padding: 0;
+    @media only screen and (max-width: 600px) {
+      font-size: 13px;
+    }
+  }
+  .bordered-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.375rem;
+    color: #2f2f2f;
+    padding: 0;
+    margin: 2.5rem 0;
+    @media only screen and (max-width: 600px) {
+      font-size: 15px;
+    }
+  }
+  .box {
+    max-width: 575.5px;
+    height: 100px;
+    background: #f8cc1c;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    color: #2f2f2f;
+
+    padding-left: 1rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    @media screen and (max-width: 600px) {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 0 1rem;
+    }
+  }
+}
+
+.integrations {
+  .header {
+    font-size: 4rem;
+    font-family: $font-primary-bold;
+    line-height: 115.5%;
+    padding-bottom: 2rem;
+  }
+  .text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #2f2f2f;
+    @media only screen and (max-width: 600px) {
+      font-size: 13px;
+    }
+  }
+  .link {
+    background-color: #465fe2;
+    height: 62px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      color: #ffffff;
+
+      a {
+        padding-left: 1.5rem;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.ohm-hour {
+  background: url("/ohmConnect/bg-3.svg"), white;
+
+  background-position: right top -461px;
+  background-repeat: no-repeat;
+  background-size: 31rem;
+  @media only screen and (max-width: 600px) {
+    background-blend-mode: hard-light;
+    background-position: right top -401px;
+  }
+  //mix-blend-mode: luminosity;
+  .content {
+    padding: 4rem 0;
+    .box {
+      max-width: 575.5px;
+      height: 100px;
+      background: #f8cc1c;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      color: #2f2f2f;
+      padding: 3px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.166rem;
+      line-height: 27px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    .header {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2.375rem;
+      padding: 1.5rem 0;
+      margin: 0;
+    }
+
+    .bordered-text {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.375rem;
+      color: #2f2f2f;
+      padding: 0rem 0 1.5rem;
+      margin: 0;
+    }
+    .text {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.1333rem;
+      line-height: 30px;
+      color: #2f2f2f;
+      padding: 0;
+      padding-bottom: 1.2rem;
+      margin: 0;
+    }
+  }
+}
+
+.origin-spike {
+  background-color: #f6f6f6;
+  padding: 5rem 0;
+  .header {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.375rem;
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  .text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.375rem;
+    color: #2f2f2f;
+    padding: 0rem 0 1rem;
+    margin: 0;
+  }
+  .sub-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.122rem;
+    line-height: 30px;
+    color: #2f2f2f;
+    padding: 0;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+}
+
+.webflow {
+  background: url("/ohmConnect/bg-2.svg"), white;
+
+  background-position: right -50px top -61px;
+  background-repeat: no-repeat;
+  background-size: 31rem;
+  @media only screen and (max-width: 600px) {
+    background-blend-mode: hard-light;
+    background-position: right -50px top 81px;
+  }
+  padding: 5rem 0;
+  .header {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.375rem;
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  .text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.375rem;
+    color: #2f2f2f;
+    padding: 0rem 0 1.5rem;
+    margin: 0;
+  }
+  .sub-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.112rem;
+    line-height: 30px;
+    color: #2f2f2f;
+    padding: 0;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+  span {
+    font-family: "PoppinSemi";
+    font-size: 1.112rem;
+  }
+  .que {
+    font-family: "PoppinSemi";
+    font-size: 1.112rem;
+  }
+}
+
+.tech-stack-ohm {
+  p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 72px;
+  }
+  .content {
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    padding-bottom: 2rem;
+  }
+  .review {
+    padding: 5rem 0;
+    .text {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.3rem;
+      color: #2f2f2f;
+      padding: 0rem 0 1.5rem;
+      margin: 0;
+      line-height: normal;
+      text-align: center;
+    }
+
+    .name- {
+      font-family: "PoppinSemi";
+      font-size: 1.2rem;
+      padding: 0;
+      margin: 0;
+      margin-top: -1rem;
+    }
+    .post {
+      font-family: "Poppins";
+      font-size: 1.112rem;
+      padding: 0;
+      margin: 0;
+      margin-top: -2.6rem;
+    }
+  }
+
+  .img {
+    img {
+      @media screen and (max-width: 900px) {
+        height: 90px;
+        width: 70px;
+      }
+      @media screen and (max-width: 600px) {
+        height: 80px;
+        width: 60px;
+      }
+    }
+  }
+}

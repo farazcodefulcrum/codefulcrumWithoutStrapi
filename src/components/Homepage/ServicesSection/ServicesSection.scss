@@ -1,0 +1,154 @@
+@import "../../../assests/styles/variables.scss";
+
+.services-section {
+  padding: 8rem 0;
+  background: url("/dev-services-bg.png"), $cf-white;
+  background-position: bottom -320px right 0px;
+  background-repeat: no-repeat;
+  background-size: 32rem;
+
+  @media only screen and (max-width: 600px) {
+    padding: 5rem 0;
+    background-blend-mode: hard-light;
+  }
+  .text {
+    font-size: $font-size-16;
+    color: $cf-black;
+    font-family: $font-primary;
+    font-weight: $font-weight-5;
+    @media only screen and (max-width: 992px) {
+      padding-left: 0rem;
+    }
+  }
+  .service-section-cards {
+    margin-top: 3rem;
+    .service-section-card {
+      max-width: 373px;
+      ///  background-image: $cf-white;
+      background: linear-gradient(to top, #183266 50%, #fff 50%);
+      background-size: 100% 200%;
+      background-position: top left;
+      transition: all 0.5s ease-out;
+      border: 1px solid #cccccc;
+      padding: 3rem 2rem 3rem;
+      position: relative;
+      border-radius: $border-radius-8;
+      transition: 200ms;
+      width: 100%;
+      min-height: 463px;
+      padding-bottom: 1.5rem;
+      transition: 0.3s ease-in-out;
+
+      @media only screen and (max-width: 1000px) {
+        min-height: 440px;
+        top: 0px;
+      }
+      @media only screen and (max-width: 778px) {
+        min-height: 380px;
+        top: 0px;
+      }
+
+      .link-icon {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.75rem;
+        height: 1.25rem;
+        width: 1.25rem;
+        svg {
+          fill: $cf-black;
+        }
+      }
+      .icon-img {
+        border-radius: 50%;
+        height: 5.25rem;
+        width: 5.25rem;
+        transition: 200ms;
+        img {
+          margin-left: -2rem !important;
+        }
+      }
+      .heading {
+        margin-top: 1.5rem;
+        font-size: 2.3rem;
+        color: $cf-black;
+        font-family: $font-primary;
+        font-weight: $font-weight-9;
+        padding-bottom: 0.5rem;
+        line-height: 3rem;
+        transition: 200ms;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 1.5rem;
+        @media only screen and (max-width: 1000px) {
+          margin-top: 2.5rem;
+        }
+        @media only screen and (max-width: 768px) {
+          margin-top: 3.5rem;
+        }
+        @media only screen and (max-width: 478px) {
+          margin-top: 5rem;
+        }
+      }
+      .heading-2 {
+        font-size: 2.3rem;
+        color: $cf-black;
+        font-family: $font-primary;
+        font-weight: $font-weight-9;
+        padding-bottom: 0.5rem;
+        line-height: 3rem;
+        transition: 200ms;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 1.5rem;
+      }
+      .text {
+        margin-top: 0.5rem;
+        font-size: $font-size-16;
+        color: $cf-black;
+        font-family: $font-primary;
+        font-weight: $font-weight-4;
+        padding: 0;
+        transition: 200ms;
+      }
+
+      &:hover {
+        background-position: bottom left;
+        color: #fff;
+
+        // background-color: #183266;
+        // background-position: bottom;
+        @media only screen and (max-width: 500px) {
+          margin: 1rem 0;
+        }
+        transform: scale(1.023);
+        transition: 0.3s ease-in-out;
+
+        @media only screen and (max-width: 768px) {
+          height: 400px;
+          top: -10px;
+        }
+        .icon-img {
+          transition: 200ms;
+          filter: drop-shadow(0px 15px 30px rgba(250, 187, 90, 0.26));
+        }
+
+        .link-icon {
+          svg {
+            fill: $cf-white;
+            transition: 200ms;
+            transform: rotate(360deg);
+            transition: all 0.6s ease-in-out 0s;
+            // // animation-direction: alternate-reverse;
+            // animation-direction: reverse;
+            //animation-iteration-count: infinite;
+          }
+        }
+        .heading,
+        .heading-2,
+        .text {
+          color: $cf-white;
+        }
+      }
+    }
+  }
+}

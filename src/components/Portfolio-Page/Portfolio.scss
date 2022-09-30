@@ -1,0 +1,336 @@
+@import "../../assests/styles/variables.scss";
+.porfolio-bg {
+  background: url("/back-illustration.png"), $cf-white;
+  padding: 10rem 0 3rem;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.portfolio-main-wrapper {
+  background: transparent;
+  position: relative;
+  ///top: -180px;
+  .col-6 {
+    width: 100% !important;
+  }
+}
+.portfolio-cards-box {
+  a {
+    text-decoration: none;
+  }
+
+  .card-sm,
+  .card-lg {
+    padding: $padding-12;
+    background-color: transparent;
+    .inner-card {
+      position: relative;
+      transform-origin: center;
+      background-position: center;
+      background-size: cover;
+      border-radius: $border-radius-16;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      .portfolio-img {
+        display: flex;
+        justify-content: center;
+        padding: $padding-24 $padding-12 $padding-12;
+
+        object-fit: contain;
+        box-sizing: border-box;
+      }
+      .gradient-effect {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(0deg, #101010 60%, transparent);
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 500ms;
+        border-radius: $border-radius-16;
+      }
+      .card-content {
+        position: absolute;
+        bottom: -4.5rem;
+        left: 0;
+        width: 100%;
+        height: 168px;
+        padding: $padding-16 0 $padding-16 $padding-16;
+        background-position: center;
+        background-size: cover;
+        transition: 500ms;
+        @media only screen and (max-width: 768px) {
+          bottom: -5rem;
+        }
+        @media only screen and (max-width: 426px) {
+          bottom: -7rem;
+        }
+        .card-heading {
+          font-family: $font-primary;
+          font-size: $font-size-18;
+          font-weight: $font-weight-6;
+          line-height: 1.5rem;
+          color: $cf-white;
+          margin-bottom: $margin-12;
+          margin-top: 1.3rem;
+
+          margin-bottom: -1rem;
+          @media only screen and (max-width: 768px) {
+            margin-top: 0.3rem;
+          }
+        }
+        .card-text {
+          font-family: $font-secondary;
+          font-size: $font-size-18;
+          font-weight: $font-weight-6;
+          line-height: 1.5rem;
+          color: $cf-white;
+          margin: $margin-16 0 $margin-12;
+        }
+        .card-tags {
+          position: relative;
+          align-items: center;
+          flex-wrap: nowrap;
+          overflow-x: scroll;
+          display: none;
+          &::-webkit-scrollbar {
+            display: none; /* Safari and Chrome */
+          }
+          div {
+            flex-shrink: 0;
+            font-family: $font-primary;
+            font-size: $font-size-12;
+            font-weight: $font-weight-6;
+            line-height: 1rem;
+            color: $cf-white;
+            border-radius: $border-radius-16;
+            padding: $padding-4 $padding-8;
+            width: max-content;
+            margin-right: $margin-4;
+          }
+        }
+        .portfolio-card-hover {
+          opacity: 0;
+          svg {
+            margin-top: 0.555rem;
+          }
+
+          .btn-link {
+            display: flex;
+            align-items: center;
+            &:hover {
+              .link-arrow {
+                transform: translateX(6px);
+                transition: 200ms;
+              }
+            }
+            .link-arrow {
+              transition: 200ms;
+            }
+            .card-btn {
+              font-family: $font-primary;
+              font-size: $font-size-12;
+              font-weight: $font-weight-6;
+              line-height: 1rem;
+              padding-top: 0.5rem;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        .gradient-effect {
+          opacity: 0.9;
+          transition: 500ms;
+        }
+
+        .card-content {
+          bottom: 0;
+          transition: 500ms;
+          height: max-content;
+          .card-tags {
+            display: flex;
+          }
+          .portfolio-card-hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .card-lg {
+    min-height: 30rem;
+    @media only screen and (max-width: 768px) {
+      min-height: 24.437rem;
+    }
+    .inner-card {
+      .portfolio-img {
+        img {
+          height: 24rem;
+          @media only screen and (max-width: 768px) {
+            height: 19rem;
+          }
+        }
+      }
+    }
+  }
+  .card-sm {
+    min-height: 24.437rem;
+    .inner-card {
+      .portfolio-img {
+        img {
+          height: 19rem;
+        }
+      }
+    }
+  }
+}
+
+.object-left {
+  .portfolio-img {
+    img {
+      padding: $padding-24 $padding-12 $padding-12 0px !important;
+      object-position: left !important;
+    }
+  }
+}
+
+.object-right {
+  .portfolio-img {
+    img {
+      padding: $padding-24 0px $padding-12 $padding-12 !important;
+      object-position: right !important;
+    }
+  }
+}
+
+.object-size {
+  .portfolio-img {
+    img {
+      object-fit: cover !important;
+    }
+  }
+}
+
+.portfolio-filters {
+  display: flex;
+  align-items: center;
+}
+
+.no-data-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $cf-white;
+  font-family: $font-primary;
+  font-size: $font-size-24;
+}
+
+.clear-btns {
+  display: flex;
+  .btn-1 {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    span {
+      font-size: 0.7rem !important;
+      position: relative;
+      top: -1px;
+    }
+    p {
+      padding: 0;
+      padding-right: 1rem;
+      font-family: $font-primary;
+      color: #183266;
+      font-size: 14px;
+      margin: 0;
+      &:hover {
+        color: $cf-red;
+      }
+    }
+  }
+  .btn-2 {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin: 0;
+
+    span {
+      font-size: 0.7rem !important;
+      position: relative;
+      top: -1px;
+    }
+    p {
+      padding: 0 0 0;
+      padding-right: 0.4rem;
+      font-size: 14px;
+      font-family: $font-primary;
+      margin: 0;
+
+      color: #183266;
+
+      &:hover {
+        color: $cf-red;
+      }
+    }
+  }
+}
+
+.industry-chip {
+  color: #f8275e !important;
+  background-color: rgba(248, 39, 94, 0.1) !important;
+  padding: 1px 0.25rem !important;
+  margin-top: 0.7rem !important;
+  margin-right: 0.7rem !important;
+  cursor: none !important;
+  &:hover {
+    background-color: rgba(248, 39, 94, 0.2) !important;
+  }
+}
+
+.industry-chip-active {
+  color: #fff !important;
+  background-color: #f8275e !important;
+  padding: 1px 0.25rem !important;
+  margin-top: 0.7rem !important;
+  margin-right: 0.7rem !important;
+  cursor: none !important;
+}
+
+.tech-chip {
+  color: #555bd1 !important;
+  background-color: rgba(85, 91, 209, 0.1) !important;
+  padding: 1px 0.25rem !important;
+  margin-top: 0.7rem !important;
+  margin-right: 0.7rem !important;
+  cursor: none !important;
+  &:hover {
+    background-color: rgba(85, 91, 209, 0.2) !important;
+  }
+}
+
+.tech-chip-active {
+  color: #fff !important;
+  background-color: #555bd1 !important;
+  padding: 1px 0.25rem !important;
+  margin-top: 0.7rem !important;
+  margin-right: 0.7rem !important;
+  cursor: none !important;
+}
+.select-wrapper {
+  .Mui-selected {
+    padding: 1.5rem 1rem !important;
+    font-size: 1.375rem !important;
+    color: #f8275e !important;
+  }
+  .tab-mui {
+    padding: 1.5rem 1rem !important;
+    font-size: 1.375rem !important;
+    margin-right: 2rem !important;
+    text-transform: capitalize !important;
+  }
+}

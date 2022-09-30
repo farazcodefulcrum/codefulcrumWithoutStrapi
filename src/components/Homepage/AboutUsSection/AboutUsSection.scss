@@ -1,0 +1,36 @@
+@import "../../../assests/styles/variables.scss";
+
+.about-us-section {
+  background-color: $cf-white;
+  padding: 10rem 0 5rem;
+  position: relative;
+  .text {
+    font-size: $font-size-22;
+    font-family: $font-primary;
+    color: $cf-black;
+    padding: 0 2rem;
+  }
+  .header {
+    padding: 0;
+  }
+  .about-us-arrow {
+    width: 8rem;
+    position: absolute;
+    top: -1.04rem;
+
+    right: 35%;
+    @media only screen and (max-width: 645px) {
+      width: 6rem;
+    }
+    @media only screen and (max-width: 425px) {
+      top: -0.82rem;
+    }
+  }
+  .plus {
+    font-size: 3.625rem;
+  }
+}
+.animated-digit {
+  font-size: 3.6rem;
+  font-family: "PoppinsBold";
+}

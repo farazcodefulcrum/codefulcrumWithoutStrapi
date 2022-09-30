@@ -1,0 +1,19 @@
+.client-section-wrapper {
+  position: relative;
+  background: url(/quick-project-bg.png), #ffffff;
+  padding: 5rem 0 8rem;
+  background-repeat: no-repeat;
+  background-size: 25rem;
+  background-position: bottom 0 left -129px;
+  @media only screen and (max-width: 600px) {
+    background-blend-mode: hard-light;
+  }
+  .header {
+    text-align: center;
+  }
+  .img-container {
+    img {
+      width: 174px;
+    }
+  }
+}

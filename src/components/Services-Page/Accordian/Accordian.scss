@@ -1,0 +1,53 @@
+@import "../../../assests/styles/variables.scss";
+.services-accordians {
+  .accordian-wrapper-services {
+    background-color: #183266;
+    margin-bottom: 0.5rem;
+  }
+  .on-active-bg {
+    background-color: #183266 !important;
+    color: white !important;
+  }
+  .ul-active {
+    background-color: #183266 !important;
+
+    li {
+      color: white !important;
+    }
+  }
+  .accordian-2 {
+    background-color: #f3f3f3;
+    padding: 0;
+    margin: 0;
+    .ul {
+      padding: 0 1rem;
+      margin: 0;
+      li {
+        font-size: 1.125rem;
+        font-family: $font-primary;
+
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .detail {
+      background-color: #f3f3f3;
+      p {
+        font-family: $font-primary;
+        font-size: 1rem;
+        @media only screen and (max-width: 600px) {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .div-bar-p-2 {
+    color: #ff5b53;
+    padding: 0 1rem;
+    display: flex;
+    padding-top: 9px;
+    height: 2.8rem;
+    border-radius: 4px;
+    width: 72%;
+  }
+}

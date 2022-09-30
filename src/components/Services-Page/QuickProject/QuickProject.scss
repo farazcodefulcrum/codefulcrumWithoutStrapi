@@ -1,0 +1,75 @@
+@import "../../../assests/styles/variables.scss";
+
+.quick-project-services {
+  .accordion-item {
+    background-color: #183266;
+    border: 2px solid $cf-white;
+  }
+
+  .accordion-header {
+    border-left: 2px solid $cf-white;
+  }
+  .header {
+    font-size: 1rem;
+    font-family: "PoppinSemi";
+    font-weight: 600;
+    @media only screen and (max-width: 600px) {
+      font-size: 13px;
+    }
+  }
+  .body-paragraph {
+    font-family: $font-primary;
+
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2f2f2f;
+  }
+  .accordion-collapse {
+    background-color: #f3f3f3;
+    border-left: 2px solid $cf-white;
+    border-radius: 0 !important;
+  }
+
+  .accordion-button {
+    background-color: #f3f3f3;
+    padding: 2rem;
+    font-family: $font-primary;
+    font-size: $font-size-28;
+    font-weight: $font-weight-6;
+    color: $cf-black;
+
+    &:focus {
+      border: none;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #f3f3f3;
+    color: $cf-black;
+  }
+
+  .accordion-body {
+    font-size: $font-size-16;
+    font-family: $font-primary;
+    color: $cf-black;
+    padding: 2rem;
+    padding-top: 0;
+  }
+
+  .number {
+    color: white;
+    padding: 0.35rem 2.5rem;
+    min-width: 9rem;
+  }
+
+  .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    transform: scale(0.7) !important;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  }
+}

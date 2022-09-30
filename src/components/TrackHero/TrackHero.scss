@@ -1,0 +1,245 @@
+@import "../../assests/styles/variables.scss";
+
+.lagacy-wrapper {
+  .legacy-fixes {
+    background-color: #f6f6f6;
+    padding: 5rem 0;
+
+    .header {
+      font-size: 2.375rem;
+      color: #2f2f2f;
+      font-family: "PoppinSemi";
+    }
+    .text {
+      color: #2f2f2f;
+      font-family: $font-primary;
+      font-size: 1.25rem;
+    }
+  }
+  .text {
+    p {
+      margin: 5rem 0;
+      color: #2f2f2f;
+      font-family: $font-primary;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.versions-trackhero {
+  margin-bottom: 8rem;
+  margin-top: 9rem;
+
+  @media screen and (max-width: 600px) {
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+  }
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    @media screen and (max-width: 600px) {
+      padding: 0rem !important;
+    }
+    .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 50%;
+      max-width: 50%;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    .img-left {
+      padding-right: 1.5rem !important;
+      @media screen and (max-width: 600px) {
+        padding-right: 0rem !important;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .older {
+      font-family: "PoppinSemi";
+      font-size: 1.7rem;
+      margin-top: 1rem;
+      @media screen and (max-width: 600px) {
+        text-align: center;
+        margin: 2.5rem;
+      }
+    }
+    .updated {
+      font-family: "PoppinSemi";
+      font-size: 1.7rem;
+      margin-top: 1rem;
+      text-align: end;
+      @media screen and (max-width: 600px) {
+        text-align: center;
+        margin: 2.5rem;
+      }
+    }
+  }
+
+  .text {
+    font-size: 1.5rem;
+    font-family: $font-primary;
+    color: #2f2f2f;
+    margin: 7rem 0;
+    padding-left: 9rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.features-trackhero {
+  background: url("/ohmConnect/bg-2.svg"), white;
+
+  background-position: right 0 top -191px;
+  background-repeat: no-repeat;
+  background-size: 31rem;
+  background-blend-mode: hard-light;
+
+  @media only screen and (max-width: 600px) {
+    background-blend-mode: hard-light;
+    background-position: right -50px top 81px;
+  }
+
+  padding: 6rem 0;
+  .header {
+    color: #2f2f2f;
+    font-size: 2.375rem;
+    font-family: "PoppinSemi";
+  }
+  .text {
+    color: #2f2f2f;
+    margin: 0;
+    font-size: 1.375rem;
+    font-family: $font-primary;
+  }
+  .box {
+    max-width: 575.5px;
+    height: 100px;
+    background: #5333ff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    color: #f0f0f0;
+    padding-left: 1rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    @media screen and (max-width: 600px) {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 0 1rem;
+    }
+  }
+}
+
+.spa-trackhero {
+  .content {
+    padding: 8rem 0;
+    padding-bottom: 5rem;
+    background-color: #f6f6f6;
+    .header {
+      font-size: 3rem;
+      font-family: "PoppinSemi";
+    }
+    .text-spa {
+      font-family: $font-primary;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      color: #2f2f2f;
+      padding-bottom: 1rem;
+    }
+  }
+  .bg-content {
+    background: url("/ohmConnect/bg-2.svg"), white;
+
+    background-position: right top -400px;
+    background-repeat: no-repeat;
+    background-size: 31rem;
+    background-blend-mode: hard-light;
+
+    @media only screen and (max-width: 600px) {
+      background-blend-mode: hard-light;
+      background-position: right top -400px;
+    }
+  }
+  .content-2 {
+    padding: 8rem 0;
+    padding-bottom: 5rem;
+    .header {
+      font-size: 3rem;
+      font-family: "PoppinSemi";
+      padding-bottom: 1.2em;
+    }
+    .text {
+      font-family: $font-primary;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      color: #2f2f2f;
+      padding: 0;
+      line-height: 180%;
+    }
+  }
+  .text {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.24rem;
+    color: #2f2f2f;
+    padding: 5.5rem 0;
+  }
+  .img-wrapper {
+    padding-bottom: 0rem;
+  }
+}
+
+.tech-stack {
+  p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 72px;
+  }
+  .content {
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    padding-bottom: 2rem;
+    margin-bottom: 6rem;
+  }
+  img {
+    @media screen and (max-width: 900px) {
+      height: auto;
+      width: 70px;
+    }
+    @media screen and (max-width: 600px) {
+      height: auto;
+      width: 55px;
+    }
+  }
+}

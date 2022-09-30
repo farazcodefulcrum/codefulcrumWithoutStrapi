@@ -1,0 +1,95 @@
+@import "../../../assests/styles/variables.scss";
+.project-desc-ohm {
+  .content {
+    .header {
+      font-family: "PoppinSemi";
+      font-size: 1.5rem;
+      color: #ffffff;
+    }
+    .text {
+      font-family: $font-primary;
+      color: #ffffff;
+    }
+  }
+}
+.introduction-ohm {
+  .content-intro {
+    padding-top: 5.5rem;
+    padding-bottom: 4.5rem;
+    .header {
+      font-size: 18px;
+      font-family: $font-primary;
+      padding-top: 10px;
+    }
+    .text {
+      color: #2f2f2f;
+      font-family: $font-primary;
+      font-size: 1.25rem;
+    }
+  }
+
+  .img-wrapper {
+    margin-bottom: 10rem;
+  }
+
+  .content-problem {
+    margin-bottom: 9rem;
+    .header {
+      font-size: 18px;
+      font-family: $font-primary;
+      text-align: end;
+      @media only screen and (max-width: 900px) {
+        text-align: start;
+      }
+    }
+    .text {
+      color: #2f2f2f;
+      font-family: $font-primary;
+      font-size: 1.25rem;
+    }
+  }
+}
+.data-column-ohm {
+  background: url("/ohmConnect/bg-1.svg"), white;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-blend-mode: hard-light !important;
+
+  @media only screen and (max-width: 600px) {
+    background-position: left;
+    background-size: 40rem;
+    background-blend-mode: hard-light !important;
+  }
+  .header {
+    font-family: "PoppinSemi";
+    font-size: 1.7rem;
+    color: #2f2f2f;
+    padding-bottom: 0.5rem;
+  }
+  .box {
+    height: 100%;
+    width: 100%;
+    background-color: #3b54e8;
+    padding: 1.7rem;
+    padding-bottom: 1rem;
+    border-radius: 8px;
+
+    .sub-text {
+      font-family: $font-primary;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.25rem;
+      padding: 0;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      padding-top: 1.2rem;
+    }
+  }
+
+  .divider {
+    margin-top: 1rem;
+    height: 4px;
+    background-color: #2f2f2f;
+  }
+}

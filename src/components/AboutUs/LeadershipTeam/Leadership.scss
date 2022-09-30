@@ -1,0 +1,454 @@
+@import "../../../assests/styles/variables.scss";
+@mixin cricle {
+  position: absolute;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .header {
+    font-family: $font-primary;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    .plus {
+      color: $cf-red;
+      margin-left: -5px;
+    }
+  }
+  .text {
+    font-family: $font-primary;
+    font-size: 0.7rem;
+    padding: 0 4px;
+    margin: 0;
+    text-transform: capitalize;
+  }
+  @media only screen and (max-width: 1100px) {
+    width: 115px;
+    height: 115px;
+    .header {
+      font-size: 1rem;
+      @media only screen and (max-width: 600px) {
+        font-size: 13px;
+      }
+      margin-left: -3px;
+    }
+    .text {
+      font-size: 0.5rem;
+    }
+  }
+  @media only screen and (max-width: 1050px) {
+    width: 100px;
+    height: 100px;
+    .header {
+      font-size: 1rem;
+      @media only screen and (max-width: 600px) {
+        font-size: 13px;
+      }
+      .plus {
+        color: $cf-red;
+        margin-left: -2px;
+      }
+    }
+    .text {
+      font-size: 0.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 795px) {
+    width: 90px;
+    height: 90px;
+    .header {
+      font-size: 1rem;
+      @media only screen and (max-width: 600px) {
+        font-size: 13px;
+      }
+      margin-left: 0px;
+    }
+    .text {
+      font-size: 0.5rem;
+    }
+  }
+  @media only screen and (max-width: 685px) {
+    width: 83px;
+    height: 83px;
+    .header {
+      font-size: 0.9rem;
+      margin-left: 0px;
+      @media only screen and (max-width: 600px) {
+        font-size: 13px;
+      }
+    }
+    .text {
+      font-size: 0.5rem;
+    }
+  }
+  @media only screen and (max-width: 426px) {
+    width: 60px;
+    height: 60px;
+    .header {
+      font-size: 0.8rem;
+      margin-left: 0px;
+    }
+    .text {
+      font-size: 0.6rem;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    width: 50px;
+    height: 50px;
+    .header {
+      font-size: 0.7rem;
+      margin-left: 0px;
+    }
+    .text {
+      font-size: 0.5rem;
+    }
+  }
+}
+.leadership-bg {
+  background: url("/aboutUs/leaders-bg.svg");
+  margin-top: 1rem;
+  position: relative;
+  background-position: center;
+  height: 640px;
+  background-size: 55rem;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    background-blend-mode: hard-light;
+  }
+  @media only screen and (max-width: 375px) {
+    height: 500px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    background-size: 51rem;
+  }
+  @media only screen and (max-width: 326px) {
+    background-size: 47rem;
+  }
+  .circle-1 {
+    @include cricle;
+    top: 10%;
+    left: 40%;
+    background-color: #fabb5a;
+
+    @media only screen and (max-width: 777px) {
+      top: 10%;
+      left: 36%;
+    }
+    @media only screen and (max-width: 426px) {
+      top: 24%;
+      left: 36%;
+    }
+    @media only screen and (max-width: 375px) {
+      top: 14%;
+      left: 36%;
+    }
+    .header {
+      color: white;
+      .plus {
+        color: $cf-red;
+      }
+    }
+    .text {
+      color: white;
+    }
+  }
+  .circle-2 {
+    @include cricle;
+    top: 20%;
+    right: 28%;
+    background-color: #2f2f2f;
+    @media only screen and (max-width: 2560px) {
+      top: 20%;
+      right: 38%;
+    }
+    @media only screen and (max-width: 2000px) {
+      top: 20%;
+      right: 33%;
+    }
+    @media only screen and (max-width: 1424px) {
+      top: 20%;
+      right: 29%;
+    }
+    @media only screen and (max-width: 1090px) {
+      top: 20%;
+      right: 23%;
+    }
+    @media only screen and (max-width: 768px) {
+      top: 20%;
+      right: 23%;
+    }
+    @media only screen and (max-width: 602px) {
+      top: 20%;
+      right: 18%;
+    }
+    @media only screen and (max-width: 517px) {
+      top: 20%;
+      right: 11%;
+    }
+    @media only screen and (max-width: 462px) {
+      top: 20%;
+      right: 10%;
+    }
+    @media only screen and (max-width: 426px) {
+      top: 28%;
+      right: 6%;
+    }
+    @media only screen and (max-width: 375px) {
+      top: 20%;
+      right: 6%;
+    }
+    .header {
+      color: #ffffff;
+
+      .plus {
+        color: $cf-red;
+      }
+    }
+    .text {
+      color: white;
+      opacity: 0.8;
+    }
+  }
+  .circle-3 {
+    @include cricle;
+    top: 32%;
+    left: 30%;
+    background-color: #f0f0f0;
+    @media only screen and (max-width: 2560px) {
+      top: 32%;
+      left: 37%;
+    }
+    @media only screen and (max-width: 1900px) {
+      top: 32%;
+      left: 34%;
+    }
+    @media only screen and (max-width: 1565px) {
+      top: 32%;
+      left: 30%;
+    }
+    @media only screen and (max-width: 1255px) {
+      top: 32%;
+      left: 27%;
+    }
+    @media only screen and (max-width: 1200px) {
+      top: 32%;
+      left: 26%;
+    }
+    @media only screen and (max-width: 1006px) {
+      top: 32%;
+      left: 20%;
+    }
+    @media only screen and (max-width: 650px) {
+      top: 32%;
+      left: 16%;
+    }
+    @media only screen and (max-width: 650px) {
+      top: 32%;
+      left: 11%;
+    }
+    @media only screen and (max-width: 500px) {
+      top: 32%;
+      left: 7%;
+    }
+    @media only screen and (max-width: 462px) {
+      top: 32%;
+      left: 5%;
+    }
+    @media only screen and (max-width: 426px) {
+      top: 32%;
+      left: 4%;
+    }
+    @media only screen and (max-width: 375px) {
+      top: 32%;
+      left: 2%;
+    }
+    @media only screen and (max-width: 375px) {
+      top: 22%;
+      left: 2%;
+    }
+    .header {
+      color: #2f2f2f;
+      .plus {
+        color: $cf-red;
+      }
+    }
+    .text {
+      color: #2f2f2f;
+    }
+  }
+  .circle-4 {
+    @include cricle;
+    top: 64%;
+    left: 29%;
+    background-color: #2f2f2f;
+    @media only screen and (max-width: 2560px) {
+      top: 64%;
+      left: 39%;
+    }
+    @media only screen and (max-width: 2000px) {
+      top: 64%;
+      left: 36%;
+    }
+    @media only screen and (max-width: 1565px) {
+      top: 64%;
+      left: 31%;
+    }
+    @media only screen and (max-width: 1300px) {
+      top: 64%;
+      left: 26%;
+    }
+    @media only screen and (max-width: 1050px) {
+      top: 64%;
+      left: 24%;
+    }
+    @media only screen and (max-width: 768px) {
+      top: 64%;
+      left: 18%;
+    }
+    @media only screen and (max-width: 602px) {
+      top: 64%;
+      left: 13%;
+    }
+    @media only screen and (max-width: 520px) {
+      top: 64%;
+      left: 8%;
+    }
+    @media only screen and (max-width: 460px) {
+      top: 64%;
+      left: 4%;
+    }
+    @media only screen and (max-width: 375px) {
+      top: 70%;
+      left: 6%;
+    }
+    .header {
+      color: white;
+      .plus {
+        color: $cf-red;
+      }
+    }
+    .text {
+      color: white;
+      opacity: 0.8;
+    }
+  }
+  .circle-5 {
+    @include cricle;
+    top: 68%;
+    right: 38%;
+    background-color: #fabb5a;
+    @media only screen and (max-width: 2560px) {
+      top: 78%;
+      right: 42%;
+    }
+    @media only screen and (max-width: 1200px) {
+      top: 75%;
+      right: 38%;
+    }
+    @media only screen and (max-width: 750px) {
+      top: 72%;
+      right: 38%;
+    }
+    @media only screen and (max-width: 426px) {
+      top: 65%;
+      right: 35%;
+    }
+    @media only screen and (max-width: 382px) {
+      top: 65%;
+      right: 25%;
+    }
+    @media only screen and (max-width: 375px) {
+      top: 75%;
+      right: 25%;
+    }
+    .header {
+      color: white;
+      .plus {
+        color: $cf-red;
+      }
+    }
+    .text {
+      color: white;
+    }
+  }
+  .circle-6 {
+    @include cricle;
+    top: 50%;
+    right: 28%;
+    background-color: #183266;
+    @media only screen and (max-width: 2560px) {
+      top: 50%;
+      right: 36%;
+    }
+    @media only screen and (max-width: 1792px) {
+      top: 50%;
+      right: 30%;
+    }
+    @media only screen and (max-width: 1424px) {
+      top: 50%;
+      right: 27%;
+    }
+    @media only screen and (max-width: 1200px) {
+      top: 50%;
+      right: 23%;
+    }
+    @media only screen and (max-width: 850px) {
+      top: 50%;
+      right: 18%;
+    }
+    @media only screen and (max-width: 777px) {
+      top: 50%;
+      right: 18%;
+    }
+    @media only screen and (max-width: 600px) {
+      top: 50%;
+      right: 8%;
+    }
+    @media only screen and (max-width: 500px) {
+      top: 50%;
+      right: 5%;
+    }
+    @media only screen and (max-width: 462px) {
+      top: 50%;
+      right: 5%;
+    }
+    @media only screen and (max-width: 382px) {
+      top: 50%;
+      right: 2%;
+    }
+    @media only screen and (max-width: 326px) {
+      top: 57%;
+      right: 7%;
+    }
+    @media only screen and (max-width: 375px) {
+      top: 63%;
+      right: 6%;
+    }
+
+    .header {
+      color: white;
+      .plus {
+        color: $cf-red;
+      }
+    }
+    .text {
+      color: white;
+      opacity: 0.8;
+    }
+  }
+  .header {
+    height: fit-content;
+    width: 260px;
+    @media only screen and (max-width: 777px) {
+      width: 230px;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+@import "../../../assests/styles/variables.scss";
+
+.display-tablet-none {
+  display: block;
+}
+
+.hero-bg {
+  background: url("/back-illustration.png"), $cf-white;
+  padding: 10rem 0 3rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.bg-dark {
+  background-color: $cf-dark-bg;
+}
+
+.hero-text-cs {
+  font-size: $font-size-20;
+  font-family: $font-primary;
+  color: $cf-black;
+  font-weight: 600;
+  margin-bottom: $margin-28;
+  margin-top: $margin-16;
+  padding-right: 6rem;
+  width: 92%;
+
+  @media only screen and (max-width: 705px) {
+    width: 100%;
+  }
+}
+
+.hero-img-cs {
+  width: 35rem;
+  height: 30rem;
+  margin: auto;
+  margin-left: -5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  @media only screen and (max-width: 576px) {
+    margin-left: 0rem;
+    margin-top: 0rem;
+    width: 100%;
+    height: 100%;
+  }
+}
+.hero-text-column-cs {
+  position: relative;
+}
+
+.social-heading {
+  width: max-content;
+  font-size: $font-size-12;
+  font-family: $font-primary;
+  font-weight: $font-weight-7;
+  padding: 0 1rem 0.25rem 0;
+  border-bottom: 1px solid $cf-black;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  .social-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    &:nth-child(2) {
+      margin: 0 2rem;
+    }
+  }
+}
+
+.scroll-down-custom-software {
+  display: flex;
+  position: absolute;
+  right: -80px;
+  bottom: 1rem;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  .text {
+    width: max-content;
+    font-size: 12px;
+    font-family: $font-primary;
+    font-weight: $font-weight-7;
+    color: $cf-black;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    margin-left: 12px;
+  }
+  .icon {
+    height: 112px;
+    transition: 200ms;
+    width: 32px;
+  }
+}

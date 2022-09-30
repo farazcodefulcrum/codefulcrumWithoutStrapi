@@ -1,0 +1,56 @@
+@import "../../../assests/styles/variables.scss";
+
+.custom-multiple-select {
+  margin-right: 1rem;
+  margin-bottom: 0.3rem;
+  width: 49.5%;
+  label {
+    color: #595b63;
+  }
+
+  .MuiAutocomplete-inputRoot {
+    padding-right: 5px !important;
+  }
+  .MuiAutocomplete-endAdornment {
+    display: none;
+  }
+  svg {
+    fill: white;
+  }
+  fieldset {
+    border: 2px solid #cdcdd0;
+    // border: 2px solid #4f4fa1;
+  }
+  input {
+    font-size: $font-size-16;
+  }
+  .MuiOutlinedInput-root {
+    border-radius: $border-radius-8;
+    &:hover {
+      fieldset {
+        border-color: #1e2646 !important;
+      }
+    }
+  }
+  .MuiAutocomplete-endAdornment {
+    top: auto;
+  }
+  label.Mui-focused {
+    color: $cf-red;
+  }
+  &:focus-within,
+  .Mui-focused {
+    fieldset {
+      border-color: #42508a !important;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  .MuiChip-root {
+    background-color: $cf-light-bg;
+    color: $cf-white;
+  }
+}

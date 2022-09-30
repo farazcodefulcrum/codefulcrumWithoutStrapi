@@ -1,0 +1,511 @@
+@import "../../../assests/styles/variables.scss";
+.development-services-bg {
+  // height: 2000px;
+  .frame-bg {
+    background: url("/customSoftware/services-bg.svg");
+
+    background-position: right 56px;
+    background-repeat: no-repeat;
+    background-size: 63rem;
+
+    .top-box {
+      margin: 8rem 0;
+      @media only screen and (max-width: 900px) {
+        margin: 5rem 0;
+      }
+      @media only screen and (max-width: 700px) {
+        margin: 3rem 0;
+      }
+      .header {
+        font-size: 2.375rem;
+        line-height: 40px;
+        font-family: "PoppinSemi";
+        text-align: center;
+      }
+      .text {
+        color: #2f2f2f;
+        text-align: center;
+        font-size: 1rem;
+        font-family: $font-primary;
+        text-align: justify;
+        @media only screen and (max-width: 600px) {
+          font-size: 13.4px;
+        }
+      }
+    }
+    .header-bg {
+      width: 50%;
+      @media only screen and (max-width: 900px) {
+        width: 100%;
+      }
+    }
+    .heading-bg {
+      background: url("/customSoftware/heading-bg.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 13rem;
+
+      /* padding-top: 1rem; */
+      // padding-right: 1rem;
+      // width: 475px !important;
+      // height: 240px !important;
+      // .header {
+      //   @media only screen and (max-width: 476px) {
+      //     font-size: 3rem;
+      //   }
+      // }
+      // @media only screen and (max-width: 992px) {
+      //   background-position: right 120px;
+      //   background-size: 23rem;
+      // }
+
+      // @media only screen and (max-width: 768px) {
+      //   background-position: left 108px;
+      //   background-size: 21rem;
+      // }
+      // @media only screen and (max-width: 476px) {
+      //   width: auto !important;
+      //   height: auto !important;
+      //   background-position: left 81px;
+      //   background-size: 16rem;
+      // }
+      // @media only screen and (max-width: 425px) {
+      //   width: auto !important;
+      //   height: auto !important;
+      //   background-position: left 68px;
+      //   background-size: 16rem;
+      // }
+      // @media only screen and (max-width: 425px) {
+      //   width: auto !important;
+      //   height: auto !important;
+      //   background-position: left 66px;
+      //   background-size: 18rem;
+      // }
+    }
+    .sub-header {
+      font-size: 1.75rem;
+      line-height: 32px;
+      .span-1 {
+        background: url("/customSoftware/sub-header-2.svg");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        font-family: $font-primary-bold;
+      }
+      .span-2 {
+        background: url("/customSoftware/sub-header-1.svg");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        font-family: $font-primary-bold;
+      }
+    }
+  }
+
+  .cards-bg {
+    margin-top: 6rem;
+
+    // margin-bottom: 12rem;
+    min-height: 510px;
+    @media only screen and (max-width: 700) {
+      margin-bottom: 7rem;
+    }
+    .box-1 {
+      background: url("/customSoftware/cards-bg.svg");
+      background-position: left -302px;
+      background-size: 60rem;
+      background-repeat: no-repeat;
+      height: 366px;
+      /// margin-top: 3rem;
+      background-color: #fabb5a;
+      background-blend-mode: overlay;
+      position: relative;
+      transition: all 0.3s;
+      @media only screen and (max-width: 1100px) {
+        height: 410px;
+      }
+      @media only screen and (max-width: 892px) {
+        height: 285px;
+      }
+      @media only screen and (max-width: 768px) {
+        background-position: left -177px;
+      }
+      @media only screen and (max-width: 425px) {
+        background-position: left -129px;
+      }
+      .header {
+        font-size: 1.8rem;
+        font-family: $font-primary-bold;
+      }
+      .text {
+        font-size: 1rem;
+        color: #2f2f2f;
+        font-family: $font-primary;
+        @media only screen and (max-width: 600px) {
+          font-size: 13px;
+        }
+      }
+      ol {
+        font-size: 15px;
+      }
+      &:hover {
+        top: -55px;
+        height: 477px;
+        background-color: #183266 !important;
+        // margin-top: -2rem;
+        // margin-bottom: -1rem;
+        color: white !important;
+        padding-top: 6.4rem;
+        background-size: 68rem;
+        border-radius: 3px;
+        @media only screen and (max-width: 892px) {
+          height: 410px;
+          margin-top: 6rem;
+        }
+        .text {
+          color: white !important;
+        }
+      }
+    }
+    .box-2 {
+      background: url("/customSoftware/cards-bg.svg");
+      background-position: center;
+      background-size: 76rem;
+      background-repeat: no-repeat;
+      background-color: #fabb5a;
+      background-blend-mode: overlay;
+      height: 366px;
+      position: relative;
+      border-radius: 4px;
+      transition: all 0.3s;
+      @media only screen and (max-width: 1100px) {
+        height: 410px;
+      }
+      @media only screen and (max-width: 892px) {
+        height: 285px;
+      }
+      .header {
+        font-size: 1.8rem;
+        font-family: $font-primary-bold;
+      }
+      .text {
+        font-size: 1rem;
+        color: #2f2f2f;
+        font-family: $font-primary;
+        padding: 0;
+        @media only screen and (max-width: 600px) {
+          font-size: 13px;
+        }
+      }
+      ol {
+        font-size: 15px;
+      }
+    }
+    .box-hover {
+      background: url("/customSoftware/cards-bg.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      border-radius: 4px;
+      transition: all 0.3s;
+      top: -55px;
+      height: 477px;
+      background-color: #183266 !important;
+      padding-top: 6.4rem;
+      background-size: 68rem;
+      color: white !important;
+      border-radius: 3px;
+      @media only screen and (max-width: 892px) {
+        height: 410px;
+        /// top: -145px;
+
+        margin-top: 6rem;
+      }
+      .header {
+        font-size: 1.8rem;
+        font-family: $font-primary-bold;
+      }
+      .text {
+        font-size: 1rem;
+        color: #2f2f2f;
+        font-family: $font-primary;
+        padding: 0;
+        color: white !important;
+        @media only screen and (max-width: 600px) {
+          font-size: 13px;
+        }
+      }
+      ol {
+        font-size: 15px;
+      }
+    }
+    .box-2 {
+      background: url("/customSoftware/cards-bg.svg");
+      background-position: center;
+      background-size: 76rem;
+      background-repeat: no-repeat;
+      background-color: #fabb5a;
+      background-blend-mode: overlay;
+      height: 366px;
+      position: relative;
+      border-radius: 4px;
+      transition: all 0.3s;
+      @media only screen and (max-width: 1100px) {
+        height: 410px;
+      }
+      @media only screen and (max-width: 892px) {
+        height: 285px;
+      }
+      .header {
+        font-size: 1.8rem;
+        font-family: $font-primary-bold;
+      }
+      .text {
+        font-size: 1rem;
+        color: #2f2f2f;
+        font-family: $font-primary;
+        padding: 0;
+        @media only screen and (max-width: 600px) {
+          font-size: 13px;
+        }
+      }
+      ol {
+        font-size: 15px;
+      }
+      &:hover {
+        // top: -55px;
+        // height: 477px;
+        background-color: #183266 !important;
+        padding-top: 6.4rem;
+        background-size: 68rem;
+        color: white !important;
+        border-radius: 3px;
+        @media only screen and (max-width: 892px) {
+          // height: 410px;
+          margin-top: 6rem;
+        }
+        .text {
+          color: white !important;
+        }
+      }
+    }
+    .box-3 {
+      background: url("/customSoftware/cards-bg.svg"), #fabb5a;
+      background-position: right -302px;
+      background-size: 60rem;
+      background-repeat: no-repeat;
+      background-blend-mode: overlay;
+      height: 366px;
+      position: relative;
+      transition: all 0.3s;
+      @media only screen and (max-width: 1100px) {
+        height: 410px;
+      }
+      @media only screen and (max-width: 892px) {
+        height: 285px;
+      }
+      @media only screen and (max-width: 768px) {
+        background-position: left -177px;
+      }
+      @media only screen and (max-width: 425px) {
+        background-position: left -129px;
+      }
+      .header {
+        font-size: 1.8rem;
+        font-family: $font-primary-bold;
+      }
+      .text {
+        font-size: 1rem;
+        color: #2f2f2f;
+        font-family: $font-primary;
+        @media only screen and (max-width: 600px) {
+          font-size: 13px;
+        }
+      }
+      ol {
+        font-size: 15px;
+      }
+      &:hover {
+        top: -55px;
+        height: 477px;
+        background-color: #183266 !important;
+        @media only screen and (max-width: 892px) {
+          height: 410px;
+          margin-top: 6rem;
+        }
+        color: white !important;
+        padding-top: 6.4rem;
+        background-size: 68rem;
+        border-radius: 3px;
+        .text {
+          color: white !important;
+        }
+      }
+    }
+  }
+}
+
+.data-col-wrapper-services {
+  margin-top: 6rem;
+  background-color: #fabb5a;
+  .text {
+    color: #2f2f2f;
+    font-size: 1rem;
+    font-family: $font-primary;
+    text-align: justify;
+    @media only screen and (max-width: 600px) {
+      font-size: 13.4px;
+    }
+  }
+
+  .img-bg {
+    background: url("/customSoftware/col-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center left 260px;
+    background-size: 25rem;
+    height: 2200px;
+    @media only screen and (max-width: 1100px) {
+      background-position: center;
+    }
+    @media only screen and (max-width: 992px) {
+      background-size: 28rem;
+      height: 2100px;
+    }
+    @media only screen and (max-width: 900px) {
+      background-size: 28rem;
+      height: 2000px;
+    }
+    @media only screen and (max-width: 768px) {
+      background-size: 30rem;
+      height: 2150px;
+    }
+    @media only screen and (max-width: 680px) {
+      background-size: 30rem;
+      height: 2250px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      background: url("/customSoftware/col-bg-mobile.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      height: auto;
+      padding: 0rem 0 8rem;
+      background-size: 30rem;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      min-height: 254px;
+      border-bottom: 1px solid #f7d193;
+      border-bottom: 1px solid #f7d193;
+      border-top: 1px solid #f7d193;
+      border-right: 1px solid#f7d193;
+
+      .sub-header {
+        font-size: 2.375rem;
+        font-family: "PoppinSemi";
+      }
+      .sub-text {
+        font-family: "PoppinSemi";
+        font-size: 0.9rem;
+        width: 70%;
+        @media only screen and (max-width: 600px) {
+          font-size: 13px;
+        }
+      }
+    }
+    .text {
+      min-height: 254px;
+      border-top: 1px solid #f7d193;
+
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #f7d193;
+      border-right: 1px solid #fabb5a;
+      border-left: 1px solid #fabb5a;
+      color: #2f2f2f;
+      font-family: $font-primary;
+      padding: inherit;
+      text-align: justify;
+
+      div {
+        width: 65%;
+        margin: auto;
+        font-family: $font-primary;
+        text-align: justify;
+
+        @media only screen and (max-width: 900px) {
+          width: 100%;
+          padding: 1rem;
+        }
+        @media only screen and (max-width: 600px) {
+          font-size: 13px;
+        }
+      }
+    }
+    .text-second {
+      min-height: 254px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #f7d193;
+      border-right: 1px solid #f7d193;
+      border-top: 1px solid #fabb5a;
+      border-left: 1px solid #fabb5a;
+      font-family: $font-primary;
+      color: #2f2f2f;
+      padding: inherit;
+      padding-left: 0;
+      text-align: justify;
+
+      div {
+        width: 65%;
+        font-family: $font-primary;
+        text-align: justify;
+
+        @media only screen and (max-width: 900px) {
+          width: 100%;
+          padding: 1rem;
+        }
+        @media only screen and (max-width: 600px) {
+          font-size: 13px;
+        }
+      }
+    }
+    .header-second {
+      min-height: 254px;
+      display: flex;
+      align-items: center;
+      border: 1px solid #f7d193;
+      border-left: 1px solid #fabb5a;
+      border-right: 1px solid #fabb5a;
+      border-top: 1px solid #fabb5a;
+      .sub-header {
+        font-size: 2.375rem;
+        font-family: "PoppinSemi";
+      }
+      .sub-text {
+        font-family: "PoppinSemi";
+        font-size: 0.9rem;
+        @media only screen and (max-width: 600px) {
+          font-size: 13px;
+        }
+      }
+    }
+    .mobile-header {
+      font-size: 1.6rem;
+      margin-top: 3.7rem;
+      font-family: "PoppinSemi";
+    }
+    .mobile-text {
+      font-family: $font-primary;
+      font-size: 1rem;
+      text-align: justify;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 13px;
+      }
+    }
+    .text {
+      font-family: $font-primary;
+    }
+  }
+}

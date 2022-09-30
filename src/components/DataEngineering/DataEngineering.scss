@@ -1,0 +1,33 @@
+@import "../../assests/styles/variables.scss";
+.engineering-services {
+  padding: 1rem 0 6rem;
+  background-color: #fabb5a;
+  .header {
+    text-align: center;
+  }
+  .service-name-1 {
+    font-size: 1.5rem;
+    font-family: "PoppinSemi";
+    margin-top: 1.1rem;
+  }
+  .service-name-2 {
+    font-size: 1.5rem;
+    font-family: "PoppinSemi";
+    margin-top: -1rem;
+  }
+  .icon {
+    @media only screen and (max-width: 500px) {
+      img {
+        height: 60px;
+        width: 60px;
+      }
+    }
+  }
+}
+.engineering-benefits {
+  background: url("/servicesPage/bg-illustration.png"), #fabb5a;
+  background-position: center;
+  background-size: cover;
+
+  height: 800px;
+}

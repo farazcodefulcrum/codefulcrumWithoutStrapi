@@ -1,0 +1,63 @@
+@import "../../../assests/styles/variables.scss";
+
+.display-tablet-none {
+  display: block;
+}
+
+.hero-bg {
+  background: url("/back-illustration.png"), $cf-white;
+  padding: 10rem 0 3rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.bg-dark {
+  background-color: $cf-dark-bg;
+}
+
+.hero-text {
+  font-size: $font-size-20;
+  font-family: $font-primary;
+  color: $cf-black;
+  font-weight: 600;
+  margin-bottom: $margin-28;
+  margin-top: $margin-16;
+  padding-right: 6rem;
+}
+
+.hero-img {
+  width: 35rem;
+  height: 28rem;
+  margin: auto;
+}
+.hero-text-column {
+  position: relative;
+}
+
+.social-heading {
+  width: max-content;
+  font-size: $font-size-12;
+  font-family: $font-primary;
+  font-weight: $font-weight-7;
+  padding: 0 1rem 0.25rem 0;
+  border-bottom: 1px solid $cf-black;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  .social-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    &:nth-child(2) {
+      margin: 0 2rem;
+    }
+  }
+}

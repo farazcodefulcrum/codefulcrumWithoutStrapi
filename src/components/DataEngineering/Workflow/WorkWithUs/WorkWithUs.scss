@@ -1,0 +1,78 @@
+@import "../../../../assests/styles/variables.scss";
+.work-with-us {
+  position: relative;
+  background: url("/dataEngineering/bg-workflow.svg"), red;
+  background-position: right;
+  background-size: 46rem;
+  background-repeat: no-repeat;
+  height: 46rem;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+
+  top: -20rem;
+  width: 100%;
+  padding-top: 20rem;
+  @media only screen and (max-width: 600px) {
+    background-size: 28rem;
+  }
+  .text {
+    font-family: "Poppins";
+
+    color: #2f2f2f;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 14px;
+      margin-bottom: 1rem;
+    }
+  }
+  .header {
+    width: 55%;
+    font-family: $font-primary-bold;
+    font-size: 4rem;
+    line-height: 4.5rem;
+
+    @media only screen and (max-width: 700px) {
+      width: 100%;
+      padding-top: 1rem;
+    }
+  }
+}
+.data-column {
+  background: transparent;
+  margin-top: 4rem;
+  padding-top: 32rem;
+  padding-bottom: 5rem;
+  @media only screen and (max-width: 900px) {
+    padding-top: 25rem;
+  }
+  @media only screen and (max-width: 700px) {
+    padding-top: 25rem;
+  }
+  @media only screen and (max-width: 500px) {
+    padding-top: 34rem;
+  }
+  .header {
+    font-size: 2.375rem;
+    font-family: "PoppinSemi";
+  }
+  .text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: black;
+    min-height: 130px;
+    @media only screen and (max-width: 850px) {
+      min-height: 160px;
+    }
+    @media only screen and (max-width: 600px) {
+      min-height: 80px;
+    }
+  }
+  .divider {
+    height: 4px;
+    background: linear-gradient(89.65deg, #142f64 -1.86%, #fabb5a 193.38%);
+  }
+}

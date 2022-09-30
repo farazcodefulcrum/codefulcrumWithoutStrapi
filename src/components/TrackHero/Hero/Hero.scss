@@ -1,0 +1,90 @@
+@import "../../../assests/styles/variables.scss";
+
+.display-tablet-none {
+  display: block;
+}
+
+.hero-bg-track-hero {
+  background: url("/trackHero/hero-bgr.png"), $cf-white;
+  padding: 9rem 0 3rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.bg-dark {
+  background-color: $cf-dark-bg;
+}
+
+.hero-text-cs {
+  font-size: $font-size-20;
+  font-family: $font-primary;
+  color: $cf-black;
+  font-weight: 600;
+  margin-bottom: $margin-28;
+  margin-top: $margin-16;
+  padding-right: 6rem;
+  width: 92%;
+
+  @media only screen and (max-width: 705px) {
+    width: 100%;
+  }
+}
+
+.hero-img-track {
+  width: 35rem;
+  height: 30rem;
+  margin: auto;
+  margin-left: -5rem;
+  margin-top: 4rem;
+  @media only screen and (max-width: 576px) {
+    margin-left: 0rem;
+    margin-top: 0rem;
+  }
+}
+.hero-text-column-trackhero {
+  position: relative;
+  .header {
+    font-size: $font-primary;
+    font-size: $font-size-48;
+    line-height: normal;
+    color: #ffffff;
+  }
+  .header-bg {
+    padding-bottom: 2rem;
+  }
+  .text {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #ffffff;
+  }
+}
+
+.social-heading {
+  width: max-content;
+  font-size: $font-size-12;
+  font-family: $font-primary;
+  font-weight: $font-weight-7;
+  padding: 0 1rem 0.25rem 0;
+  border-bottom: 1px solid $cf-black;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  .social-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    &:nth-child(2) {
+      margin: 0 2rem;
+    }
+  }
+}

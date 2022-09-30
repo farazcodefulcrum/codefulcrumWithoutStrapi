@@ -1,0 +1,14 @@
+@import "../../../assests/styles/variables.scss";
+
+.img-swiper {
+  width: 100%;
+  padding: 8rem 0;
+  background: #a23fee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: 655px) {
+    padding: 4rem 0;
+  }
+}

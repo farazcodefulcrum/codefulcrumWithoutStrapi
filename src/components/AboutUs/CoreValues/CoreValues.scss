@@ -1,0 +1,44 @@
+@import "../../../assests/styles/variables.scss";
+
+.core-bg {
+  background: url("/aboutUs/core-bg.svg"), #183266;
+  background-position: left -85px;
+  background-size: 52rem;
+  background-repeat: no-repeat;
+  padding: 0rem 0 10rem;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0rem 0 5rem;
+  }
+  .top-header {
+    color: white;
+    @media only screen and (max-width: 600px) {
+      font-size: 3rem;
+    }
+  }
+  .header {
+    color: white;
+  }
+  .text {
+    color: white;
+
+    font-family: $font-primary;
+    font-size: 1.3rem;
+  }
+}
+
+.join-us-bg {
+  background: url("/aboutUs/join-bg.svg"), white;
+  background-position: right;
+  background-size: 26rem;
+  background-repeat: no-repeat;
+
+  .inner-div {
+    .text {
+      font-size: 2rem;
+      font-family: $font-primary;
+      text-align: center;
+      color: #2f2f2f;
+    }
+  }
+}

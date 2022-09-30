@@ -1,0 +1,53 @@
+.data-col-bs {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media only screen and (max-width: 600px) {
+      align-items: center;
+    }
+    .icon-wrapper {
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      @media only screen and (max-width: 600px) {
+        justify-content: center;
+        img {
+          height: 60px !important;
+          width: 60px !important;
+        }
+      }
+    }
+    .heading-wrapper {
+      .header {
+        @media only screen and (max-width: 600px) {
+          font-size: 1.2rem !important;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        text-align: center;
+        font-size: 1rem !important;
+      }
+    }
+  }
+}
+.business-strategy-wrapper {
+  padding: 5rem 0;
+  @media only screen and (max-width: 800px) {
+    padding: 7rem 0;
+  }
+}
+.product-strategy-header {
+  .text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #2f2f2f;
+    @media only screen and (max-width: 600px) {
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+@import "../../../assests/styles/variables.scss";
+.project-desc-trackhero {
+  .content {
+    .header {
+      font-family: "PoppinSemi";
+      font-size: 1.5rem;
+      color: #ffffff;
+    }
+    .text {
+      font-family: $font-primary;
+      color: #ffffff;
+    }
+  }
+}
+.introduction-trackhero {
+  background: url("/ohmConnect/bg-1.svg"), white;
+
+  background-position: left top -20px;
+  background-repeat: no-repeat;
+  background-size: 31rem;
+  @media only screen and (max-width: 600px) {
+    background-blend-mode: hard-light;
+    background-position: left 0px top 161px;
+  }
+
+  .content-intro {
+    padding: 8rem 0;
+    .header {
+      font-size: 18px;
+      font-family: $font-primary;
+      padding-top: 10px;
+      text-align: justify;
+    }
+    .text {
+      color: #2f2f2f;
+      font-family: $font-primary;
+      font-size: 1.25rem;
+      text-align: justify;
+    }
+  }
+
+  .img-wrapper {
+    margin-bottom: 10rem;
+  }
+
+  .content-problem {
+    background-color: #f6f6f6;
+    padding: 7rem 0;
+    .header {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      line-height: 4rem;
+    }
+    .sub-header {
+      font-size: 1.25rem;
+
+      font-family: "PoppinSemi";
+      font-style: normal;
+      color: #2f2f2f;
+    }
+    .text {
+      color: #2f2f2f;
+      font-family: $font-primary;
+      font-size: 1.25rem;
+
+      line-height: 28px;
+    }
+  }
+}
+.data-column-trackhero {
+  background: url("/ohmConnect/bg-2.svg"), white;
+  background-position: right 0px top -201px;
+  background-repeat: no-repeat;
+  background-size: 45rem;
+  @media only screen and (max-width: 600px) {
+    background-blend-mode: hard-light;
+    background-position: right -50px top 81px;
+  }
+
+  padding: 4rem 0;
+  padding-bottom: 8rem;
+  .header {
+    font-family: "PoppinSemi";
+    font-size: 3rem;
+    color: #2f2f2f;
+    padding-bottom: 4rem;
+  }
+  .content {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 1.3rem 1.3rem;
+    min-height: 100%;
+    .text {
+      font-family: $font-primary;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.125rem;
+      padding-top: 1rem;
+      display: flex;
+      align-items: center;
+      color: #2f2f2f;
+    }
+    .icon {
+      width: 68px;
+      height: 68px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #183266;
+    }
+  }
+}
+
+.content-boxes {
+  .box-1 {
+    background-color: #5333ff;
+    max-width: 100%;
+    min-height: 100%;
+    padding: 3rem 2rem 2rem;
+    border-radius: 8px;
+    .header {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2.375rem;
+      line-height: normal;
+      color: #ffffff;
+    }
+    .text {
+      font-family: $font-primary;
+      font-style: normal;
+      font-size: 1.2rem;
+      line-height: normal;
+    }
+  }
+}

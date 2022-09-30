@@ -1,0 +1,78 @@
+@import "../../../assests/styles/variables.scss";
+
+.reviews-box {
+  background: #183266;
+  padding-top: 5rem;
+  position: relative;
+  z-index: 1;
+  min-height: 850px;
+  // @media only screen and (max-width: 913px) {
+  //   height: 950px !important;
+  // }
+  // @media only screen and (max-width: 853px) {
+  //   height: 1130px !important;
+  // }
+  // @media only screen and (max-width: 695px) {
+  //   height: 1230px !important;
+  // }
+  // @media only screen and (max-width: 550px) {
+  //   height: 1300px !important;
+  // }
+  // @media only screen and (max-width: 392px) {
+  //   height: 1400px !important;
+  // }
+
+  // @media only screen and (max-width: 348px) {
+  //   height: 1480px !important;
+  // }
+  // @media only screen and (max-width: 323px) {
+  //   height: 1015px !important;
+  // }
+
+  .reviews {
+    // width: 92%;
+    // position: absolute;
+    // // bottom: -50px;
+    // left: 50%;
+    // transform: translateX(-50%);
+    padding-bottom: 4rem;
+  }
+  .clutch-widget-box {
+    max-width: 960px !important;
+    margin: auto !important;
+    border-radius: $border-radius-16 !important;
+    overflow: hidden !important;
+    background-color: $cf-dark-bg !important;
+    min-height: 720px;
+    // iframe {
+    //   height: 725px !important;
+    //   @media only screen and (max-width: 992px) {
+    //     height: 730px !important;
+    //   }
+    //   @media only screen and (max-width: 900px) {
+    //     height: 1000px !important;
+    //   }
+    //   @media only screen and (max-width: 693px) {
+    //     height: 1100px !important;
+    //   }
+    //   @media only screen and (max-width: 457px) {
+    //     height: 1150px !important;
+    //   }
+    //   @media only screen and (max-width: 392px) {
+    //     height: 1200px !important;
+    //   }
+    //   @media only screen and (max-width: 365px) {
+    //     height: 1240px !important;
+    //   }
+    //   @media only screen and (max-width: 347px) {
+    //     height: 1300px !important;
+    //   }
+    //   @media only screen and (max-width: 336px) {
+    //     height: 1350px !important;
+    //   }
+    //   @media only screen and (max-width: 323px) {
+    //     height: 846px !important;
+    //   }
+    // }
+  }
+}
